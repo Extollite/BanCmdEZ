@@ -1,16 +1,15 @@
-# KillingReward
+# BanCommands
 
 Simple mod for [ElementZero](https://github.com/Element-0/ElementZero).<br><br>
-Actually this name is not really correct because it is adding money reward for killing mobs 
-but also adding /back, /wild and /suicide command.<br>
-This mod should be treated as some Custom EZ mod example.
+This mod allows you to ban usage of certain commands for non operators.
 
 Config
 -------------
 ```
-  KllingReward:
+  BanCmd:
     enabled: true
-    killingMoney:
-      Chicken: 1
-      Creeper: 3
+    bannedCommands:
+      - gamerule
+    blockedCommandMessage: You cannot use this command!
+    logCommands: true
 ```
